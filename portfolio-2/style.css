@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0a192f;
+  color: #ccd6f6;
+  line-height: 1.6;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Hero Typing Animation */
+.typing {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #64ffda;
+  border-right: 3px solid #64ffda;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  margin-bottom: 10px;
+  animation: typing 3.5s steps(30, end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 20ch; } /* adjust to text length */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Scroll Animation Initial State */
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Links */
+a {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
